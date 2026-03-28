@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C10001001 /* SleepOptimizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10001000 /* SleepOptimizerApp.swift */; };
+		C10002001 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10002000 /* AppConstants.swift */; };
+		C10003001 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10003000 /* Color+Hex.swift */; };
+		C10004001 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10004000 /* Date+Extensions.swift */; };
+		C10005001 /* SleepQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10005000 /* SleepQuality.swift */; };
+		C10006001 /* SleepRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10006000 /* SleepRecord.swift */; };
+		C10007001 /* AlarmSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10007000 /* AlarmSettings.swift */; };
+		C10008001 /* PremiumStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10008000 /* PremiumStatus.swift */; };
+		C10009001 /* PremiumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10009000 /* PremiumService.swift */; };
+		C10010001 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10010000 /* NotificationService.swift */; };
+		C10011001 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10011000 /* HealthKitService.swift */; };
+		C10012001 /* SleepInsightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10012000 /* SleepInsightService.swift */; };
+		C10013001 /* SleepLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10013000 /* SleepLogViewModel.swift */; };
+		C10014001 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10014000 /* StatisticsViewModel.swift */; };
+		C10015001 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10015000 /* AlarmViewModel.swift */; };
+		C10016001 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10016000 /* SettingsViewModel.swift */; };
+		C10017001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10017000 /* MainTabView.swift */; };
+		C10018001 /* SleepLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10018000 /* SleepLogView.swift */; };
+		C10019001 /* SleepRecordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10019000 /* SleepRecordCardView.swift */; };
+		C10020001 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10020000 /* StatisticsView.swift */; };
+		C10021001 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10021000 /* AlarmView.swift */; };
+		C10022001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10022000 /* SettingsView.swift */; };
+		C10023001 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10023000 /* PremiumView.swift */; };
+		C10024001 /* GlowButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10024000 /* GlowButtonStyle.swift */; };
+		C10025001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10025000 /* Assets.xcassets */; };
+		T1A001 /* SleepModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F001; };
+		T1A002 /* SleepInsightServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F002; };
+		PP0001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = PP0002; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		T1P001 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C50000000;
+			proxyType = 1;
+			remoteGlobalIDString = C40000000;
+			remoteInfo = SleepOptimizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C10000000 /* SleepOptimizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepOptimizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10001000 /* SleepOptimizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepOptimizerApp.swift; sourceTree = "<group>"; };
+		C10002000 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		C10003000 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		C10004000 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		C10005000 /* SleepQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepQuality.swift; sourceTree = "<group>"; };
+		C10006000 /* SleepRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecord.swift; sourceTree = "<group>"; };
+		C10007000 /* AlarmSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettings.swift; sourceTree = "<group>"; };
+		C10008000 /* PremiumStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumStatus.swift; sourceTree = "<group>"; };
+		C10009000 /* PremiumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumService.swift; sourceTree = "<group>"; };
+		C10010000 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C10011000 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		C10012000 /* SleepInsightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInsightService.swift; sourceTree = "<group>"; };
+		C10013000 /* SleepLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogViewModel.swift; sourceTree = "<group>"; };
+		C10014000 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		C10015000 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		C10016000 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C10017000 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C10018000 /* SleepLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogView.swift; sourceTree = "<group>"; };
+		C10019000 /* SleepRecordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordCardView.swift; sourceTree = "<group>"; };
+		C10020000 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		C10021000 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		C10022000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C10023000 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		C10024000 /* GlowButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowButtonStyle.swift; sourceTree = "<group>"; };
+		C10025000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		T1F001 /* SleepModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModelTests.swift; sourceTree = "<group>"; };
+		T1F002 /* SleepInsightServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInsightServiceTests.swift; sourceTree = "<group>"; };
+		PP0002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		T1R001 /* SleepOptimizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepOptimizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		T1D001 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30000000 = {
+			isa = PBXGroup;
+			children = (
+				C30001000 /* SleepOptimizer */,
+				T1G001 /* SleepOptimizerTests */,
+				C30099000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30099000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000 /* SleepOptimizer.app */,
+				T1R001 /* SleepOptimizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30001000 /* SleepOptimizer */ = {
+			isa = PBXGroup;
+			children = (
+				C30002000 /* App */,
+				C30003000 /* Models */,
+				C30004000 /* ViewModels */,
+				C30005000 /* Views */,
+				C30006000 /* Services */,
+				C30007000 /* Constants */,
+				C30008000 /* Extensions */,
+				C10025000 /* Assets.xcassets */,
+				PP0002 /* PrivacyInfo.xcprivacy */,
+			);
+			path = SleepOptimizer;
+			sourceTree = "<group>";
+		};
+		C30002000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C10001000 /* SleepOptimizerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C30003000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C10005000 /* SleepQuality.swift */,
+				C10006000 /* SleepRecord.swift */,
+				C10007000 /* AlarmSettings.swift */,
+				C10008000 /* PremiumStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C30004000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C10013000 /* SleepLogViewModel.swift */,
+				C10014000 /* StatisticsViewModel.swift */,
+				C10015000 /* AlarmViewModel.swift */,
+				C10016000 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C30005000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C10017000 /* MainTabView.swift */,
+				C30005001 /* Sleep */,
+				C30005002 /* Statistics */,
+				C30005003 /* Alarm */,
+				C30005004 /* Settings */,
+				C30005005 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C30005001 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				C10018000 /* SleepLogView.swift */,
+				C10019000 /* SleepRecordCardView.swift */,
+			);
+			path = Sleep;
+			sourceTree = "<group>";
+		};
+		C30005002 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				C10020000 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		C30005003 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				C10021000 /* AlarmView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		C30005004 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C10022000 /* SettingsView.swift */,
+				C10023000 /* PremiumView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C30005005 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C10024000 /* GlowButtonStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C30006000 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C10009000 /* PremiumService.swift */,
+				C10010000 /* NotificationService.swift */,
+				C10011000 /* HealthKitService.swift */,
+				C10012000 /* SleepInsightService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C30007000 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C10002000 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C30008000 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C10003000 /* Color+Hex.swift */,
+				C10004000 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		T1G001 /* SleepOptimizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				T1F001 /* SleepModelTests.swift */,
+				T1F002 /* SleepInsightServiceTests.swift */,
+			);
+			path = SleepOptimizerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C40000000 /* SleepOptimizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C60000000 /* Build configuration list for PBXNativeTarget "SleepOptimizer" */;
+			buildPhases = (
+				C20000000 /* Sources */,
+				C20000001 /* Frameworks */,
+				C20000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepOptimizer;
+			productName = SleepOptimizer;
+			productReference = C10000000 /* SleepOptimizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T1N001 /* SleepOptimizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = T1CL01;
+			buildPhases = (
+				T1S001 /* Sources */,
+				T1D001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				T1DEP1,
+			);
+			name = SleepOptimizerTests;
+			productName = SleepOptimizerTests;
+			productReference = T1R001 /* SleepOptimizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C50000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C40000000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					T1N001 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = C40000000;
+					};
+				};
+			};
+			buildConfigurationList = C60000002 /* Build configuration list for PBXProject "SleepOptimizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+				Base,
+			);
+			mainGroup = C30000000;
+			productRefGroup = C30099000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C40000000 /* SleepOptimizer */,
+				T1N001 /* SleepOptimizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C20000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10025001 /* Assets.xcassets in Resources */,
+				PP0001 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C20000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10001001 /* SleepOptimizerApp.swift in Sources */,
+				C10002001 /* AppConstants.swift in Sources */,
+				C10003001 /* Color+Hex.swift in Sources */,
+				C10004001 /* Date+Extensions.swift in Sources */,
+				C10005001 /* SleepQuality.swift in Sources */,
+				C10006001 /* SleepRecord.swift in Sources */,
+				C10007001 /* AlarmSettings.swift in Sources */,
+				C10008001 /* PremiumStatus.swift in Sources */,
+				C10009001 /* PremiumService.swift in Sources */,
+				C10010001 /* NotificationService.swift in Sources */,
+				C10011001 /* HealthKitService.swift in Sources */,
+				C10012001 /* SleepInsightService.swift in Sources */,
+				C10013001 /* SleepLogViewModel.swift in Sources */,
+				C10014001 /* StatisticsViewModel.swift in Sources */,
+				C10015001 /* AlarmViewModel.swift in Sources */,
+				C10016001 /* SettingsViewModel.swift in Sources */,
+				C10017001 /* MainTabView.swift in Sources */,
+				C10018001 /* SleepLogView.swift in Sources */,
+				C10019001 /* SleepRecordCardView.swift in Sources */,
+				C10020001 /* StatisticsView.swift in Sources */,
+				C10021001 /* AlarmView.swift in Sources */,
+				C10022001 /* SettingsView.swift in Sources */,
+				C10023001 /* PremiumView.swift in Sources */,
+				C10024001 /* GlowButtonStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		T1S001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				T1A001 /* SleepModelTests.swift in Sources */,
+				T1A002 /* SleepInsightServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		T1DEP1 = {
+			isa = PBXTargetDependency;
+			target = C40000000;
+			targetProxy = T1P001;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C70000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C70000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C70000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "수면 데이터를 읽어 수면 패턴을 분석합니다";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "수면 기록을 건강 앱에 저장합니다";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "알람 시간에 맞춰 기상 알림을 보내드립니다";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C70000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "수면 데이터를 읽어 수면 패턴을 분석합니다";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "수면 기록을 건강 앱에 저장합니다";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "알람 시간에 맞춰 기상 알림을 보내드립니다";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		T1BC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepOptimizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SleepOptimizer";
+			};
+			name = Debug;
+		};
+		T1BC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepOptimizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SleepOptimizer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C60000000 /* Build configuration list for PBXNativeTarget "SleepOptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70000002 /* Debug */,
+				C70000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C60000002 /* Build configuration list for PBXProject "SleepOptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70000000 /* Debug */,
+				C70000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		T1CL01 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				T1BC01 /* Debug */,
+				T1BC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C50000000 /* Project object */;
+}
