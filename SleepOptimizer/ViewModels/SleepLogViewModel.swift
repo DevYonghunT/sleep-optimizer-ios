@@ -111,17 +111,9 @@ final class SleepLogViewModel: ObservableObject {
             return []
         }
 
-        var descriptor = FetchDescriptor<SleepRecord>(
+        let descriptor = FetchDescriptor<SleepRecord>(
             sortBy: [SortDescriptor(\.createdAt, order: .reverse)]
         )
-
-        // 무료 사용자는 최근 7일 이내 기록만 조회 가능
-        if !premiumService.premiumStatus.isActive {
-            let sevenDaysAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date()
-            descriptor.predicate = #Predicate<SleepRecord> { record in
-                record.createdAt >= sevenDaysAgo
-            }
-        }
 
         do {
             let records = try modelContext.fetch(descriptor)

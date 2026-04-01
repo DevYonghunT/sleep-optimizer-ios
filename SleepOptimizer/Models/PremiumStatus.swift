@@ -2,7 +2,7 @@
 //  PremiumStatus.swift
 //  SleepOptimizer
 //
-//  프리미엄 구독 상태 모델
+//  프리미엄 구독 상태 모델 — 모든 기능 무료 해금
 //
 
 import Foundation
@@ -12,19 +12,18 @@ struct PremiumStatus {
     /// 프리미엄 활성 여부
     let isActive: Bool
 
-    /// 수면 기록 열람 가능 여부 (무료 사용자는 최근 7일 제한)
+    /// 기록 열람 항상 허용
     func canAccessHistory(recordCount: Int) -> Bool {
-        if isActive { return true }
-        return recordCount <= AppConstants.freeRecordLimit
+        return true
     }
 
-    /// 스마트 알람 사용 가능 여부
+    /// 스마트 알람 항상 사용 가능
     var canUseSmartAlarm: Bool {
-        isActive
+        true
     }
 
-    /// 상세 통계 접근 가능 여부
+    /// 상세 통계 항상 접근 가능
     var canAccessDetailedStats: Bool {
-        isActive
+        true
     }
 }

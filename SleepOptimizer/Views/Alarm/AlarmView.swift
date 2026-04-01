@@ -167,10 +167,7 @@ struct AlarmView: View {
 
                 Spacer()
 
-                // 프리미엄 배지
-                if !viewModel.premiumService.premiumStatus.isActive {
-                    premiumBadge
-                }
+                // 모든 기능 해금
             }
 
             Text("얕은 수면 단계에서 깨워드립니다")
@@ -199,8 +196,7 @@ struct AlarmView: View {
                     }
                 }
             }
-            .opacity(viewModel.premiumService.premiumStatus.canUseSmartAlarm ? 1.0 : 0.5)
-            .disabled(!viewModel.premiumService.premiumStatus.canUseSmartAlarm)
+            // 스마트 알람 항상 활성
         }
         .padding(16)
         .background(AppColor.cardBackground)
@@ -229,21 +225,7 @@ struct AlarmView: View {
         }
     }
 
-    /// 프리미엄 배지
-    private var premiumBadge: some View {
-        HStack(spacing: 4) {
-            Image(systemName: "crown.fill")
-                .font(.caption2)
-            Text("PRO")
-                .font(.caption2)
-                .fontWeight(.bold)
-        }
-        .foregroundColor(AppColor.accent)
-        .padding(.horizontal, 8)
-        .padding(.vertical, 4)
-        .background(AppColor.accent.opacity(0.2))
-        .cornerRadius(8)
-    }
+    // 프리미엄 배지 제거 — 모든 기능 해금
 }
 
 #Preview {

@@ -35,12 +35,20 @@
 		T1A001 /* SleepModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F001; };
 		T1A002 /* SleepInsightServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F002; };
 		PP0001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = PP0002; };
+		UISO001 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UISO002; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		T1P001 = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C50000000;
+			proxyType = 1;
+			remoteGlobalIDString = C40000000;
+			remoteInfo = SleepOptimizer;
+		};
+		UISO014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C50000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C40000000;
 			remoteInfo = SleepOptimizer;
@@ -78,6 +86,8 @@
 		T1F002 /* SleepInsightServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInsightServiceTests.swift; sourceTree = "<group>"; };
 		PP0002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		T1R001 /* SleepOptimizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepOptimizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		UISO002 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
+		UISO003 /* SleepOptimizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepOptimizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		UISO012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +121,7 @@
 				C30001000 /* SleepOptimizer */,
 				T1G001 /* SleepOptimizerTests */,
 				C30099000 /* Products */,
+				UISO004 /* SleepOptimizerUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +130,7 @@
 			children = (
 				C10000000 /* SleepOptimizer.app */,
 				T1R001 /* SleepOptimizerTests.xctest */,
+				UISO003 /* SleepOptimizerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,6 +273,14 @@
 			path = SleepOptimizerTests;
 			sourceTree = "<group>";
 		};
+		UISO004 /* SleepOptimizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				UISO002 /* ScreenshotTests.swift */,
+			);
+			path = SleepOptimizerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +318,23 @@
 			productReference = T1R001 /* SleepOptimizerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		UISO010 /* SleepOptimizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = UISO020;
+			buildPhases = (
+				UISO011 /* Sources */,
+				UISO012 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				UISO013 /* PBXTargetDependency */,
+			);
+			name = SleepOptimizerUITests;
+			productName = SleepOptimizerUITests;
+			productReference = UISO003 /* SleepOptimizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,6 +370,7 @@
 			targets = (
 				C40000000 /* SleepOptimizer */,
 				T1N001 /* SleepOptimizerTests */,
+				UISO010 /* SleepOptimizerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,6 +428,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		UISO011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				UISO001 /* ScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -390,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = C40000000;
 			targetProxy = T1P001;
+		};
+		UISO013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40000000 /* SleepOptimizer */;
+			targetProxy = UISO014 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -609,6 +667,42 @@
 			};
 			name = Release;
 		};
+		UISO021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepOptimizer;
+			};
+			name = Debug;
+		};
+		UISO022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.sleepoptimizer.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepOptimizer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -635,6 +729,15 @@
 			buildConfigurations = (
 				T1BC01 /* Debug */,
 				T1BC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		UISO020 /* Build configuration list for PBXNativeTarget "SleepOptimizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				UISO021 /* Debug */,
+				UISO022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

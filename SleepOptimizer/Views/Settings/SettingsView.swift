@@ -11,9 +11,6 @@ struct SettingsView: View {
     // MARK: - 의존성
     @ObservedObject var viewModel: SettingsViewModel
 
-    // MARK: - 네비게이션 상태
-    @State private var showPremiumView = false
-
     var body: some View {
         NavigationStack {
             List {
@@ -35,50 +32,37 @@ struct SettingsView: View {
             .navigationTitle("설정")
             .navigationBarTitleDisplayMode(.large)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .sheet(isPresented: $showPremiumView) {
-                PremiumView(premiumService: viewModel.premiumService)
-            }
         }
     }
 
-    // MARK: - 프리미엄 섹션
+    // MARK: - 프리미엄 섹션 — 모든 기능 해금
     private var premiumSection: some View {
         Section {
-            Button {
-                showPremiumView = true
-            } label: {
-                HStack(spacing: 14) {
-                    Image(systemName: "crown.fill")
-                        .font(.title2)
-                        .foregroundColor(AppColor.accent)
-                        .frame(width: 36)
+            HStack(spacing: 14) {
+                Image(systemName: "crown.fill")
+                    .font(.title2)
+                    .foregroundColor(AppColor.accent)
+                    .frame(width: 36)
 
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(viewModel.premiumService.premiumStatus.isActive ? "Premium 활성" : "Premium 업그레이드")
-                            .font(.body)
-                            .fontWeight(.semibold)
-                            .foregroundColor(AppColor.textPrimary)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("모든 기능 활성")
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .foregroundColor(AppColor.textPrimary)
 
-                        Text(viewModel.premiumService.premiumStatus.isActive ? "모든 기능을 사용 중입니다" : "무제한 기록, 스마트 알람 등")
-                            .font(.caption)
-                            .foregroundColor(AppColor.textSecondary)
-                    }
-
-                    Spacer()
-
-                    if !viewModel.premiumService.premiumStatus.isActive {
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundColor(AppColor.textSecondary)
-                    } else {
-                        Image(systemName: "checkmark.circle.fill")
-                            .foregroundColor(AppColor.sleepGood)
-                    }
+                    Text("모든 기능을 자유롭게 사용하세요")
+                        .font(.caption)
+                        .foregroundColor(AppColor.textSecondary)
                 }
+
+                Spacer()
+
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(AppColor.sleepGood)
             }
             .listRowBackground(AppColor.cardBackground)
         } header: {
-            Text("프리미엄")
+            Text("기능")
                 .foregroundColor(AppColor.textSecondary)
         }
     }
